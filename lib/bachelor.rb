@@ -55,7 +55,7 @@ def get_occupation(data, hometown)
     target = data.find do |contestant|
       contestant["hometown"] == hometown
     end
-    biinding.pry
+    binding.pry
   end 
   
   occupation
