@@ -65,12 +65,20 @@ end
 def get_average_age_for_season(data, season)
   # code here
   age_array = []
+  age_total = 0
+  average_age = 0
   
   data.each do |season, data|
     data.each do |contestant|
      age_array << contestant["age"].to_i
     end
   end 
+  
+  age_array.each do |age|
+    age_total + age 
+  end 
+  
+  average_age = age_total / age_array.count
   
   binding.pry
 end
