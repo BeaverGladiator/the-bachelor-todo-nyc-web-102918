@@ -82,13 +82,12 @@ def get_average_age_for_season(data, season)
     end 
   end 
   
-  binding.pry
-  
   age_array.each do |age|
     binding.pry
     age_total += age 
   end 
   
   average_age = age_total / age_array.count
-
+  
+  averge_age
 end
