@@ -88,5 +88,5 @@ def get_average_age_for_season(data, season)
   
   average_age = age_total / age_array.count
   
-  averge_age
+  average_age
 end
