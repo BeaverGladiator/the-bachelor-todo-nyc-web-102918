@@ -49,6 +49,16 @@ end
 
 def get_occupation(data, hometown)
   # code here
+  occupation = ""
+  
+  data.each do |season, data|
+    data.find do |contestant|
+      contestant["hometown"] == hometown
+      occupation = contestant["occupation"]
+    end
+  end 
+  
+  occupation
 end
 
 def get_average_age_for_season(data, season)
