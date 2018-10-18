@@ -52,7 +52,7 @@ def get_occupation(data, hometown)
   occupation = ""
   
   data.each do |season, data|
-    data.each do |contestant|
+    data.find do |contestant|
       binding.pry
       contestant["hometown"] == hometown
       occupation = contestant["occupation"]
